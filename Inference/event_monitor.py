@@ -47,12 +47,14 @@ class ChatEventMonitor:
     def process_message(self, message_data):
         if message_data == None:
             is_message_similar = False
+            message = None 
         else:
             message = ChatMessage.from_dict(message_data)
             is_message_similar = self.clusterer.is_message_similar(message)
         if not is_message_similar:
             clusters = self.clusterer.get_conversation_clusters()
-            self.clusterer.initialize_conversation_clusters(message)
+            if message is not None:
+                self.clusterer.initialize_conversation_clusters(message)
             text = ' '.join([format_message(item) for item in clusters])
             inputs = self.tokenizer(
                 text,
