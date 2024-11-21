@@ -1,9 +1,9 @@
-pyyaml
-tqdm
-numpy
-matplotlib
-pandas
 lightning==1.9.5
-sklearn
-transformers
-wandb
+matplotlib==3.9.2
+numpy==1.26.3
+pandas==2.2.3
+PyYAML==6.0.2
+sklearn==0.0
+tqdm==4.67.0
+transformers==4.46.3
+wandb==0.18.7
