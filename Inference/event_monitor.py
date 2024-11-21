@@ -67,7 +67,7 @@ class ChatEventMonitor:
                     inputs['input_ids'], 
                     inputs['attention_mask']
                 )
-            if prediction.item() > 0.9:
+            if prediction.item() > 0.95:
                 print("Calendar event detected!")
                 self.save_json(clusters)
             else:
