@@ -16,3 +16,6 @@ lightning_logs/
 wandb/
 *.ckpt
 *.pth
+
+# Results
+results/
