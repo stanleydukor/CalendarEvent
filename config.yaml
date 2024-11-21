@@ -1,0 +1,11 @@
+max_epochs: 2000
+batch_size: 2
+num_workers: 4
+train_size: 0.7
+val_size: 0.1
+lr: 2.5e-5
+weight_decay: 1.0e-6
+text_log_step: 500
+lr_log_step: 20
+model: "bert-base-uncased"
+device: 0

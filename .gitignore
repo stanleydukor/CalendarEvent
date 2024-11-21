@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.env.save
+.venv
+env/
+
+# Training logs, checkpoints and metrics
+logs/
+checkpoints/
+lightning_logs/
+wandb/
+*.ckpt
+*.pth

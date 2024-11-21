@@ -1,0 +1,9 @@
+pyyaml
+tqdm
+numpy
+matplotlib
+pandas
+lightning==1.9.5
+sklearn
+transformers
+wandb
