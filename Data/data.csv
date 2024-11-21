@@ -157,7 +157,7 @@ messages,labels
 "organizer: Planning holiday party, member1: Exciting! When?, organizer: December 15th, 7 PM, member2: Venue?, organizer: The Grand Hall, member3: I'll be there!",1
 "dev1: These integration tests are flaky, dev2: Intermittent network issue?, dev1: Maybe, dev2: Let's debug together, dev1: Sure, when?",0
 "lead: Code review session scheduled, team: What time?, lead: Tomorrow 2 PM sharp, reviewer1: I'll prepare the code, dev1: Joining remotely, lead: Teams link coming up",1
-"support: How's the latest patch working?, client: Getting some warnings, support: Can you show me?, client: Now?, support: In 30 minutes? I'm in a meeting",0
+"support: How's the latest patch working?, client: Getting some warnings, support: Can you show me?, client: Now?, support: In 30 minutes? I'm in a meeting",1
 "manager: Team sync needed, dev1: This week?, manager: Wednesday 11 AM?, dev2: Works for me, dev3: +1, manager: Calendar invite sent",1
 "user1: API rate limiting issues, user2: Known problem, user1: Any fix?, user2: Temporary workaround available, user1: Details?, user2: Check your email",0
 "hr_rep: New hire orientation next week, team_lead: Schedule?, hr_rep: Monday 9 AM to 12 PM, team_lead: Conference room?, hr_rep: Yes, room 305",1
@@ -175,7 +175,7 @@ messages,labels
 "ops_team: Server load spike, dev_team: Any deployments?, ops_team: Nothing scheduled, dev_team: Let's investigate, ops_team: War room in 5 minutes",0
 "event_planner: Company picnic next month, emp1: Date set?, event_planner: July 20th, Saturday, emp2: Where?, event_planner: Riverside Park, emp3: Family invited?",1
 "user1: Jenkins build failing, user2: Which job?, user1: Main branch CI, user2: Let me check, user1: Thanks, keep me posted",0
-"manager: Performance review cycle, team_member1: Timeline?, manager: Starts next week, team_member2: How long?, manager: Two weeks, I'll send detailed schedule",1
+"manager: Performance review cycle, team_member1: Timeline?, manager: Starts next week, team_member2: How long?, manager: Two weeks, I'll send detailed schedule",0
 "dev1: Weird race condition in threads, dev2: Can you reproduce it?, dev1: Intermittently, dev2: Let's debug together, dev1: When are you free?",0
 "product_manager: Feature demo to client, sales_team: When scheduled?, product_manager: Thursday 3 PM, dev_lead: I'll prepare the demo, sales_team: Client details?",1
 "support: @client88 need more info on your ticket, client88: What do you need?, support: Can we have a quick call?, client88: Sure, when?",0
