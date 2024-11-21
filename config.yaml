@@ -1,5 +1,5 @@
-max_epochs: 2000
-batch_size: 2
+max_epochs: 50
+batch_size: 4
 num_workers: 4
 train_size: 0.7
 val_size: 0.1

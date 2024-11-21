@@ -45,5 +45,6 @@ if __name__ == '__main__':
         resume_from_checkpoint=resume_from_checkpoint
     )
     trainer.fit(model)
+    trainer.test(model)
 
     wandb.finish()
