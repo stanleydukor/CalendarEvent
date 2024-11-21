@@ -124,6 +124,20 @@ class TrainingModule(ptl.LightningModule):
             pred_label = (output > 0.5).float()
             table.add_data(message, label, pred_label)
         wandb.log({"test_table": table})
+
+        accuracy, precision, recall, f1 = get_metrics(self.labels, self.outputs)
+        wandb.log({
+            "accuracy": accuracy,
+            "precision": precision,
+            "recall": recall,
+            "f1": f1,
+            "confusion_matrix": wandb.plot.confusion_matrix(
+                probs=None,
+                y_true=self.labels,
+                preds=self.outputs
+            )
+        })
+    
         self.messages.clear()
         self.labels.clear()
         self.outputs.clear()
