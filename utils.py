@@ -1,8 +1,9 @@
 import random
 import os
-from glob import glob
-import numpy as np
 import yaml
+import numpy as np
+from glob import glob
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from datetime import datetime
 import torch
 
@@ -22,12 +23,10 @@ def get_last_checkpoint(checkpoint_dir, return_best=False):
 def get_metrics(labels, outputs):
     labels = np.concatenate(labels, axis=0)
     outputs = np.concatenate(outputs, axis=0)
-    pred_labels = (outputs > 0.5).astype(int)
-    
-    accuracy = (pred_labels == labels).mean()
-    precision = (pred_labels[labels == 1] == labels[labels == 1]).mean()
-    recall = (pred_labels[labels == 1] == labels[labels == 1]).mean()
-    f1 = 2 * (precision * recall) / (precision + recall)
+    accuracy = accuracy_score(labels, outputs)
+    precision = precision_score(labels, outputs, average='binary')
+    recall = recall_score(labels, outputs, average='binary')
+    f1 = f1_score(labels, outputs, average='binary')
     
     return accuracy, precision, recall, f1
 
