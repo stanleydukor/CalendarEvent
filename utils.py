@@ -21,8 +21,8 @@ def get_last_checkpoint(checkpoint_dir, return_best=False):
     return f"{checkpoint_dir}/last.ckpt"
 
 def get_metrics(labels, outputs):
-    labels = np.concatenate(labels, axis=0)
-    outputs = np.concatenate(outputs, axis=0)
+    labels = np.array(labels)
+    outputs = np.array(outputs)
     accuracy = accuracy_score(labels, outputs)
     precision = precision_score(labels, outputs, average='binary')
     recall = recall_score(labels, outputs, average='binary')

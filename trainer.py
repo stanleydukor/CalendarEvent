@@ -74,11 +74,11 @@ class TrainingModule(ptl.LightningModule):
 
     def training_step(self, batch, batch_idx):
         self._is_training_step = True
-        loss, message, label, output = self._do_step(batch, batch_idx)
+        loss, messages, labels, outputs = self._do_step(batch, batch_idx)
         self.log('train_loss', loss, on_epoch=True, prog_bar=True, logger=True)
         if batch_idx % self.config['text_log_step'] == 0:
-            pred_label = (output > 0.5).float()
-            self.training_table.add_data(message, label, pred_label)
+            pred_label = (outputs[0] > 0.5).float()
+            self.training_table.add_data(messages[0], labels[0], pred_label)
         return {"loss": loss}
     
     def on_train_epoch_end(self):
@@ -87,12 +87,12 @@ class TrainingModule(ptl.LightningModule):
 
     def validation_step(self, batch, batch_idx):
         self._is_training_step = False
-        loss, message, label, output = self._do_step(batch, batch_idx)
+        loss, messages, labels, outputs = self._do_step(batch, batch_idx)
         self.validation_step_outputs.append(loss)
         self.log('val_loss', loss, on_step=True, on_epoch=True, prog_bar=True, logger=True)
         if batch_idx % self.config['text_log_step'] == 0:
-            pred_label = (output > 0.5).float()
-            self.validation_table.add_data(message, label, pred_label)
+            pred_label = (outputs[0] > 0.5).float()
+            self.validation_table.add_data(messages[0], labels[0], pred_label)
         return {"loss": loss}
     
     def on_validation_epoch_end(self):
@@ -111,10 +111,10 @@ class TrainingModule(ptl.LightningModule):
 
     def test_step(self, batch, batch_idx):
         self._is_training_step = False
-        loss, message, label, output = self._do_step(batch, batch_idx)
-        self.messages.append(message)
-        self.labels.append(label)
-        self.preds.append((output > 0.5).int())
+        loss, messages, labels, outputs = self._do_step(batch, batch_idx)
+        self.messages.extend(messages)
+        self.labels.extend([label.item() for label in labels])
+        self.preds.extend([1 if output.item() > 0.5 else 0 for output in outputs])
         self.log('test_loss', loss, on_step=True, on_epoch=True, prog_bar=True, logger=True)
         return {"loss": loss}
     
@@ -147,7 +147,7 @@ class TrainingModule(ptl.LightningModule):
         if outputs.dim() == 0:
             outputs = outputs.unsqueeze(0)
         l_bce = self._get_loss(outputs, labels.float())
-        return l_bce, messages[0], labels[0], outputs[0]
+        return l_bce, messages, labels, outputs
     
     def _get_loss(self, pred, true):
         l_bce = self.loss(pred, true)
