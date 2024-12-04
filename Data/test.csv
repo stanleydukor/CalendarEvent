@@ -7,7 +7,7 @@ messages,labels
 "my game was working fine with no sound 30 minute ago until i mess with the work around",0
 "how's thursday evening look for everyone? maybe 8pm UTC?",1
 "okay, well what thing did it ask for?",0
-"so the 5.10 release (aka breezy) will go stable october 05. (about mid month)",1
+"so the 5.10 release (aka breezy) will go stable october 05. (about mid month)",0
 "KiwiKibi_, ni it means it's not stable yet",0
 "how about we do a video call on saturday? i'm free around 2pm EST",1
 "that works for me. google meet or discord?",0
@@ -22,8 +22,7 @@ messages,labels
 "how about thursday evening? around 8pm?",1
 "works for me. i can share my screen and demo some workflows i've been using",0
 "sweet, how's saturday afternoon work for everyone?",1
-"UTC-5 here, what about the rest of you?",0
-"julio: if you register your nick with /msg nicks serve register [password]  [email]  i can talk to you in a pm",1
+"UTC-5 here, what about the rest of you?",1
 "surgy: you wanto to add a path there?",0
 "how about Saturday afternoon, around 2pm UTC?",1
 "so now ./configure can not find kde",0

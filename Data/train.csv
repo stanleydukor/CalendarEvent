@@ -24,6 +24,7 @@ messages,labels
 "user1: Cache invalidation problem, user2: In production?, user1: Yes, user2: Let's check logs, user1: Already did, nothing obvious",0
 "meeting_organizer: All hands next week, emp1: Time?, meeting_organizer: Wednesday 4pm EST, emp2: Mandatory?, meeting_organizer: Yes, all should attend, emp3: Calendar invite coming?",1
 "codewizard42: need help with kubernetes deployment, DevOpsPro: what's the issue?, codewizard42: pods keep crashing after update, DevOpsPro: want to debug together?, codewizard42: yes please!, DevOpsPro: let's hop on discord in 10",0
+"julio: if you register your nick with /msg nicks serve register [password]  [email]  i can talk to you in a pm",0
 "pixel_ninja: @cloud_master we should review the AWS costs, cloud_master: yeah, getting high, pixel_ninja: tomorrow 3pm?, cloud_master: works for me, pixel_ninja: great, will send zoom link",1
 "dragon_slayer99: anyone up for some pair programming?, coffee_coder: sure, what are you working on?, dragon_slayer99: refactoring auth service, coffee_coder: cool, discord in 5?",0
 "l33tcoder: team standup tomorrow?, scrummaster_42: yep, 9:30am as usual, dev_ninja: can we do 10am instead?, scrummaster_42: fine with me, l33tcoder: +1 for 10am",1
