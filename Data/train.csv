@@ -713,9 +713,9 @@ messages,labels
 "I've been away all weekend and haven't been watching the scene",0
 "im from malaysia",0
 "will try this again on thursday",0
-""hi, i'm using jaunty with kde. when i login, dcopserver isn't running and i'm not able to use dcopstart. any ideas?"",0
+"'hi, i'm using jaunty with kde. when i login, dcopserver isn't running and i'm not able to use dcopstart. any ideas?'",0
 "afternoon folk",0
-""Hello, I have Kubuntu 9.10, sound only works with KDE apps, not on flash, not on skype. Can someone please help me??? I need sound!!!"",0
+"'Hello, I have Kubuntu 9.10, sound only works with KDE apps, not on flash, not on skype. Can someone please help me??? I need sound!!!'",0
 "anyone else having problems with koala and rt73 ? and have they found a solution?",0
 "BluesKaj: is it available on 8.04?",0
 "How about tomorrow evening around 7pm UTC? I can screen share and we can walk through the troubleshooting together",1
@@ -752,7 +752,7 @@ messages,labels
 "Cool, how about Discord in an hour? Works for me, send a link when you're ready",1
 "BluesKaj: it was nice to meet you, hope we see again. It's 6am so it's time for me to get some sleep! ;P",0
 "Where on earth is it 6am, that there are people?",0
-"""they come for the land of the ice and snow. of the midnight sun and the harsh winds blow.""  <-name that song.",0
+"''they come for the land of the ice and snow. of the midnight sun and the harsh winds blow.''  <-name that song.",0
 "certainly not 6am here ... hahaha",0
 "it's 6am here, and I'm just about to go to bed",0
 "23:22 ..and I'm not ready for sleeping yet :P",0
@@ -763,7 +763,7 @@ messages,labels
 "Hobbsee: Well, yes. But it only worked with 0.1.0 which was released on the 8th of December",0
 "Current time in America/Chicago: December 17 2006, 02:41:06",0
 "i personally like kde but it is goin bonkers in edgy these days..........some time when i start my comp display is gone back to 600X400 and i have to tweak with setting to get it back to larger display",0
-"Hobbsee: Getting my new MTP-based MP3-player to work with Amarok... Took me ""only"" 3 weekends... :-)",0
+"Hobbsee: Getting my new MTP-based MP3-player to work with Amarok... Took me ''only'' 3 weekends... :-)",0
 "how about tomorrow evening? around 8?",1
 "well some times it's 11 am, then it justs to 1pm",0
 "Im having a little trouble with the scond partition. It says everywhere that it's mounted to media/hda2, but media/hda2 is still just a folder and moving files there just moves them around my first partition. I dont see mto able to mount my second part",0
@@ -778,7 +778,7 @@ messages,labels
 "BluesKay (sorry), manodad, I thank you both for your patience with me",0
 "its was closed this morning at 9:14 hmmm",0
 "june_: yes, open PM. My trace shows it is remarkably slow. packets start arriving a few seconds after you start.",0
-"I closed adept, that lost me the kicker somehow, and I have been having ""fun"" every since oh about 4pm this evening",0
+"I closed adept, that lost me the kicker somehow, and I have been having ''fun'' every since oh about 4pm this evening",0
 "this is going to be a first for me, but I need information on trying to get an HP C4380 Photosmart printer to work wirelessly with Linux",0
 "Hawkind: Bbetto wants it but is on ppc - is your repo setup so apt-get -b source works ?",0
 "june: he was following this: http://ivtvdriver.org/index.php/Howto:Ubuntu",0

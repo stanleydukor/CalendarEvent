@@ -1,7 +1,7 @@
-text,label
+messages,labels
 "dd  if=/dev/hda of=/dev/hda5/ubuntu.bin bs=512 count=1",0
 "how about tomorrow at 1900 UTC?",1
-"If you actually set the ""boot"" flag in fdisk, it will boot directly from there",0
+"If you actually set the ''boot'' flag in fdisk, it will boot directly from there",0
 "evert mine was 90m   and i'm on dialup....",0
 "as a test -  kill the kdm service. login at the console, edit the .xinitrc make it have 1 line   'gnome-session' then try startx. and see if theres any errors shown",0
 "my game was working fine with no sound 30 minute ago until i mess with the work around",0
@@ -18,7 +18,7 @@ text,label
 "crtr: Hoary uses X.Org, which is newer than XFree86 4.3",0
 "works for me. when u free this weekend?",1
 "Hi, do are you able to login your msn account via kopete",0
-"apokryphos: do you know what is the name of the ""keyboard detection detection by typing"" package ?",0
+"apokryphos: do you know what is the name of the ''keyboard detection detection by typing'' package ?",0
 "how about thursday evening? around 8pm?",1
 "works for me. i can share my screen and demo some workflows i've been using",0
 "sweet, how's saturday afternoon work for everyone?",1
@@ -36,7 +36,7 @@ u were saying there are errors?,0
 "which is good because it mean they will work on fixing it :)",0
 "when works for everyone? maybe this weekend?",1
 "you just pasted the second link from google",0
-"daedra: Why do you think you're ""denied access"" - how about you tell us what actually happens?",0
+"daedra: Why do you think you're ''denied access'' - how about you tell us what actually happens?",0
 "It's a production server though so no rebooting",0
 "discord works. free sometime this weekend?",1
 "perfect, i'll send you my discord handle later",0
@@ -95,7 +95,7 @@ u were saying there are errors?,0
 "well I got the gimpshop source but have no idea what to do with it :)",0
 "Tm_T, don't you have to be anywhere tomorrow?  er, today?",0
 "smouche: nope, but in hospital in wednesday",0
-"or is Tuesday some kind of ""ok everybody gets to stay home with a hangover day"" in Finland?",0
+"or is Tuesday some kind of ''ok everybody gets to stay home with a hangover day'' in Finland?",0
 "smouche: propably I don't even have hangover",0
 "discord works, how about tomorrow 1900 UTC?",1
 "+1 for that time, send invite link when ready",0
