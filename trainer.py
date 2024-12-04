@@ -22,12 +22,12 @@ class TrainingModule(ptl.LightningModule):
         self.loss = nn.BCELoss()
         self.model = CalendarEventDetector(bert_model=config['model'])
 
-        self.dataset = ChatDataset('Data/data.csv')
+        self.dataset = ChatDataset('Data/train.csv')
+        self.test_dataset = ChatDataset('Data/test.csv')
         train_size = int(self.config['train_size'] * len(self.dataset))
-        val_size = int(self.config['val_size'] * len(self.dataset))
-        test_size = len(self.dataset) - train_size - val_size
+        valid_size = len(self.dataset) - train_size
         generator = torch.Generator().manual_seed(32)
-        self.train_dataset, self.val_dataset, self.test_dataset = random_split(self.dataset, [train_size, val_size, test_size], generator=generator)
+        self.train_dataset, self.val_dataset = random_split(self.dataset, [train_size, valid_size], generator=generator)
 
         self.validation_step_outputs = []
         self.N_epochs = 5
@@ -39,7 +39,7 @@ class TrainingModule(ptl.LightningModule):
 
         self.messages = []
         self.labels = []
-        self.outputs = []
+        self.preds = []
 
         self.save_hyperparameters()
 
@@ -114,18 +114,17 @@ class TrainingModule(ptl.LightningModule):
         loss, message, label, output = self._do_step(batch, batch_idx)
         self.messages.append(message)
         self.labels.append(label)
-        self.outputs.append(output)
+        self.preds.append((output > 0.5).int())
         self.log('test_loss', loss, on_step=True, on_epoch=True, prog_bar=True, logger=True)
         return {"loss": loss}
     
     def on_test_epoch_end(self):
         table = wandb.Table(columns=["Test Message", "Test True Label", "Test Pred Label"])
-        for message, label, output in zip(self.messages, self.labels, self.outputs):
-            pred_label = (output > 0.5).float()
-            table.add_data(message, label, pred_label)
+        for message, label, pred in zip(self.messages, self.labels, self.preds):
+            table.add_data(message, label, pred)
         wandb.log({"test_table": table})
 
-        accuracy, precision, recall, f1 = get_metrics(self.labels, self.outputs)
+        accuracy, precision, recall, f1 = get_metrics(self.labels, self.preds)
         wandb.log({
             "accuracy": accuracy,
             "precision": precision,
@@ -134,13 +133,13 @@ class TrainingModule(ptl.LightningModule):
             "confusion_matrix": wandb.plot.confusion_matrix(
                 probs=None,
                 y_true=self.labels,
-                preds=self.outputs
+                preds=self.preds
             )
         })
     
         self.messages.clear()
         self.labels.clear()
-        self.outputs.clear()
+        self.preds.clear()
     
     def _do_step(self, batch, batch_idx):
         messages, labels = batch['message'], batch['label']
