@@ -1,0 +1,107 @@
+text,label
+"dd  if=/dev/hda of=/dev/hda5/ubuntu.bin bs=512 count=1",0
+"how about tomorrow at 1900 UTC?",1
+"If you actually set the ""boot"" flag in fdisk, it will boot directly from there",0
+"evert mine was 90m   and i'm on dialup....",0
+"as a test -  kill the kdm service. login at the console, edit the .xinitrc make it have 1 line   'gnome-session' then try startx. and see if theres any errors shown",0
+"my game was working fine with no sound 30 minute ago until i mess with the work around",0
+"how's thursday evening look for everyone? maybe 8pm UTC?",1
+"okay, well what thing did it ask for?",0
+"so the 5.10 release (aka breezy) will go stable october 05. (about mid month)",1
+"KiwiKibi_, ni it means it's not stable yet",0
+"how about we do a video call on saturday? i'm free around 2pm EST",1
+"that works for me. google meet or discord?",0
+"discord works for me, maybe this weekend?",1
+"which part of the software is theirs ??",0
+"also, did you burn the .iso as a file, or an image?",0
+"how about tomorrow at 1900 UTC?",1
+"crtr: Hoary uses X.Org, which is newer than XFree86 4.3",0
+"works for me. when u free this weekend?",1
+"Hi, do are you able to login your msn account via kopete",0
+"apokryphos: do you know what is the name of the ""keyboard detection detection by typing"" package ?",0
+"how about thursday evening? around 8pm?",1
+"works for me. i can share my screen and demo some workflows i've been using",0
+"sweet, how's saturday afternoon work for everyone?",1
+"UTC-5 here, what about the rest of you?",0
+"julio: if you register your nick with /msg nicks serve register [password]  [email]  i can talk to you in a pm",1
+"surgy: you wanto to add a path there?",0
+"how about Saturday afternoon, around 2pm UTC?",1
+"so now ./configure can not find kde",0
+"it's one o' clock in the morning...I'm tired...",0
+u were saying there are errors?,0
+"yeah me to especially staying awake:d",0
+"installed beryl this weekend on my alternate laptop, and loving it :)",0
+"If it doesn't there are 2 other computers I can mess with to try it",0
+"yep. and there are fixes for it or ways to go around it... but I just reinstall beryl this morning (it's evening now) and haven't had the time to play around",0
+"which is good because it mean they will work on fixing it :)",0
+"when works for everyone? maybe this weekend?",1
+"you just pasted the second link from google",0
+"daedra: Why do you think you're ""denied access"" - how about you tell us what actually happens?",0
+"It's a production server though so no rebooting",0
+"discord works. free sometime this weekend?",1
+"perfect, i'll send you my discord handle later",0
+"ZmAY: try burning a cd with cdrecord directly (sorry for the delay, it's midnight here and I was getting ready to sleep soon)",0
+"jhutchins: so i need to add /mnt/hdb3/ before /sys /proc /tmp etc?",0
+"cool, how about google meet at 7pm EST?",1
+"works for me, I'll send the invite link",0
+"anyone know why when i start a guest session on my kubuntu and login, often it crashes after only a very short time trying to use the new session (with the other main user session running in background)???",0
+"cool, when works for everyone? i'm free thursday evening",1
+"hunkennalle: not sure..... are you on another computer?",0
+"[Nige]: Ok, how about I point you to the Linux way of shareing folders, instead of the linux<->Windows way",0
+"g2g591, the folders are shared, it just seems to be a kde 4 thing, it worked with the other version of kde :)",0
+"Rodolfo: https://lists.ubuntu.com/archives/kubuntu-devel/2007-December/002111.html , answers the 3.5-4 split and your latest question",0
+"Rodolfo: for two reasons(as I understand it). 1) kde3 is almost done with its life cycle and they don't want to have to support it for 3 years",0
+"sounds good. i'll send my skype handle in a PM",0
+"or aptitude for the less gui inclined ;)",0
+"i'm not or i would have already opened the pm.",0
+"apparle: its like.... nano.... but better",0
+"intelikey: Ok, well im going to bed now.... haha..... 2 o clock where im at. if you do get that split up or what not, my emails jessie at confettinatiques.com.",0
+"that last part of my email would probably be the place i would post it",0
+"Kubuntu meeting in 30 minutes in #ubuntu-meeting",1
+"A few questions tonight. :-). First, what application is meant to control volume in KDE 4, KMix still?",0
+"well I've got artifacts all over now, and redraws failing all over the place",0
+"Would Friday evening work for everyone? I could set up a Jitsi link",1
+"Works for me. Want me to bring some debug logs I've collected?",0
+"umm is kde4 the new desktop for kubuntu's (hardy-heron) to come out sometime in april?",0
+"trophyhead: no, just one of the two choices",0
+"what time works for everyone? i've got some free slots tomorrow afternoon",1
+"+1 for that time slot, works for me",0
+"Ubuntu 5.04 (Hoary Hedgehog) was the second release of Ubuntu.  End Of Life: October 31, 2006. See !eol for more details.",0
+"Hardy Heron is the code name for the next release of Ubuntu (8.04-LTS), due April 2008 - For more info, see: https://wiki.ubuntu.com/HardyHeron - Discussion and support in #ubuntu+1, NOT #ubuntu",0
+"august_: yes. and kopete-kde4 etc. for additional apps.",0
+"tarsonis: i don't have that much time for maintaining a system.",0
+"works for me. saturday afternoon?",1
+"discord sounds good. i'll send a link",0
+"august_: there is a command you can enter to release it, but i can't remember it",0
+"jpatrick: I can't find where I wrote it down, I'll be right back and give it to you.",0
+"vamsi: give it a go, see how it goes, if thats smooth then i don't think its a graphics problem",0
+"so, how about we set up a torrent for this?",0
+"someone in touch with the devs/server admins at kubuntu.com?",0
+"We dont want icons for files ont he desktop! we need the space for WIdgets! and Desklets, or whatever they are called this week.",0
+"what is the commonly used cross-platform compressed archive format that supports unicode filenames?",0
+"+1 for discord. how about Saturday at 2pm UTC?",1
+"works for me! I'll bring my debug logs",0
+"might be true, i admit that... yet i'm really trying to somehow solve the issue, not to just rant on on a saturday night :)",0
+"muesli: isn't double-click interface the solution?",0
+"edgy: as far as sleep goes, its only a quarter til 4 pm here :p",0
+"Hello everyone, I see as I enter the room the the flash player plugin is broken...",0
+"how about tomorrow evening? I can screen share some build processes",1
+"if you're discussing KDE packaging, mind if I join in?",0
+"adz21c: that feature didn't make the deadline, but it's there in svn",0
+"has anybody gotten firefox 3 on kubuntu?",0
+"yesterday was sunday, no business transaction Tm",0
+"sequel to American in Paris:  Americans on Absinthe",0
+"kkathman: eh, somethin' like 10am ?",0
+"well I got the gimpshop source but have no idea what to do with it :)",0
+"Tm_T, don't you have to be anywhere tomorrow?  er, today?",0
+"smouche: nope, but in hospital in wednesday",0
+"or is Tuesday some kind of ""ok everybody gets to stay home with a hangover day"" in Finland?",0
+"smouche: propably I don't even have hangover",0
+"discord works, how about tomorrow 1900 UTC?",1
+"+1 for that time, send invite link when ready",0
+"cool! maybe we could do a video chat this weekend?",1
+"Saturday works great for me - what platform should we use?",1
+"(15:12:18) skaman: yes but is not the professional one  <---- not true...there is only a prof. version and it's available for download (no personal version anymore)",0
+"oh...can I keep my /home when I switch to Kubuntu? how?",0
+"well ok...good day, afternoon, evening :)",0
+"Anyone here when they are going to fix the Control Center Password issue so we dont have the use the kcmshell workaround?",0

@@ -40,7 +40,7 @@ async def listen(url):
         while count < 100:
             message = await websocket.recv()
             data = json.loads(message)
-            if len(data['message']) > 50:
+            if len(data['message']) > 30:
                 if predict(model, tokenizer, data['message']) == last_class:
                     data_dict['text'].append(data['message'])
                     data_dict['label'].append(last_class)
